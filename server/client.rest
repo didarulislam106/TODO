@@ -1,0 +1,13 @@
+# GET request to fetch data (e.g., tasks)
+GET http://localhost:3001
+
+# POST request to add a new task with a description in the JSON body
+POST http://localhost:3001/new HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "Test from REST Client"
+}
+
+# Delete task
+DELETE http://localhost:3001/delete/1 HTTP/1.1
